@@ -18,5 +18,5 @@ decorations = "None"
 bindings = [
 { key = "Insert", mods = "Shift", action = "Paste" },
 { key = "Insert", mods = "Control", action = "Copy" },
-{ key = "Back", mods = "Control", chars = "\u0017" } # Unicode equivalent of \x17
+{ key = "Back", mods = "Control", chars = "\u0017" }
 ]
