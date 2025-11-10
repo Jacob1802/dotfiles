@@ -10,4 +10,5 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 alias la='ls -a'
-
+alias cls='clear'
+alias rgboff='openrgb --server --device "G733 Gaming Headset" --mode Off'
