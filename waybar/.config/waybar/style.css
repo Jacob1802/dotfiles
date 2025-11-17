@@ -74,16 +74,13 @@ window#waybar {
 #pulseaudio,
 #custom-date,
 #custom-omarchy,
+#custom-headset-battery,
 #custom-screenrecording-indicator,
 #custom-brightness,
 #custom-update {
   min-width: 12px;
-  margin: 0 7.5px;
+  margin: 0 10px 0 0; /* Uniform right margin of 8px */
   background: transparent;      /* avoid overriding group background */
-}
-
-#pulseaudio {
-  margin-left: 0;      /* avoid overriding group background */
 }
 
 #tray {

@@ -8,9 +8,9 @@
   "modules-center": ["hyprland/workspaces", "custom/screenrecording-indicator"],
   "modules-right": [
     "network",
-    "bluetooth",
     "pulseaudio",
     "custom/brightness",
+    "custom/headset-battery",
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -20,7 +20,7 @@
       "1": " ",
       "2": "🤖",
       "3": "🌐",
-      "4": "🎧",
+      "4": "🎵",
       "5": "❤️",
       "6": "❤️",
       "7": "❤️",
@@ -68,7 +68,7 @@
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
     "format-wifi": "{icon}",
-    "format-ethernet": "󰀂",
+    "format-ethernet": "󰀂 ",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -109,9 +109,9 @@
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
-    "format-muted": "",
+    "format-muted": " ",
     "format-icons": {
-      "default": ["", "", ""]
+      "default": [" ", " ", " "]
     }
   },
   "group/tray-expander": {
@@ -150,5 +150,10 @@
     "exec": "date '+%-d/%-m'",
     "interval": 60,
     "tooltip": false
-  }
+  },
+  "custom/headset-battery": {
+      "format": "🎧 {text}",
+      "exec" : "~/.config/waybar/headset-battery.sh get",
+      "tooltip": false
+    }
 }
